@@ -1,16 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:pixrp/utils/constants/colors.dart';
+import 'package:pixrp/utils/theme/widgets_theme/appbar_theme.dart';
+import 'package:pixrp/utils/theme/widgets_theme/elevated_button_theme.dart';
+import 'package:pixrp/utils/theme/widgets_theme/text_theme.dart';
 
-class AppTheme {
-  AppTheme._();
+class AppThemes {
+  AppThemes._();
 
   static ThemeData lightTheme = ThemeData(
-    scaffoldBackgroundColor: AppColor.background,
+    scaffoldBackgroundColor: AppColors.muted,
     brightness: Brightness.light,
+    textTheme: AppTextThemes.lightTextTheme,
+    appBarTheme: AppbarTheme.lightAppbarTheme,
+    elevatedButtonTheme: AppElevatedButtonThemes.lightElevatedButtonTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
-    scaffoldBackgroundColor: AppColor.dBackground,
+    scaffoldBackgroundColor: AppColors.dMuted,
     brightness: Brightness.dark,
+    textTheme: AppTextThemes.darkTextTheme,
+    appBarTheme: AppbarTheme.darkAppbarTheme,
+    elevatedButtonTheme: AppElevatedButtonThemes.darkElevatedButtonTheme,
   );
 }

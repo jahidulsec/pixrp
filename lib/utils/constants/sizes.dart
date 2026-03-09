@@ -1,4 +1,4 @@
-class Sizes {
+class AppSizes {
   // Padding and margin sizes
   static const double xs = 4.0;
   static const double sm = 10.0;
@@ -38,6 +38,7 @@ class Sizes {
   static const double borderRadiusSm = 4.0;
   static const double borderRadiusMd = 8.0;
   static const double borderRadiusLg = 15.0;
+  static const double borderRadiusXl = 20.0;
 
   // Divider height
   static const double dividerHeight = 1.0;
