@@ -14,12 +14,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actionsPadding: EdgeInsets.only(right: AppSizes.md),
-        title: Text(
-          "PixRP",
-          style: Theme.of(
-            context,
-          ).textTheme.headlineSmall!.copyWith(fontWeight: FontWeight.bold),
-        ),
+        title: Logo(),
         actions: [
           IconButton(
             onPressed: () {},
@@ -44,6 +39,37 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class Logo extends StatelessWidget {
+  const Logo({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Text(
+          "P",
+          style: Theme.of(
+            context,
+          ).textTheme.headlineSmall!.copyWith(fontWeight: FontWeight.bold),
+        ),
+        Text(
+          "ix",
+          style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+            fontWeight: FontWeight.bold,
+            color: const Color.fromARGB(255, 120, 150, 0),
+          ),
+        ),
+        Text(
+          "RP",
+          style: Theme.of(
+            context,
+          ).textTheme.headlineSmall!.copyWith(fontWeight: FontWeight.bold),
+        ),
+      ],
     );
   }
 }

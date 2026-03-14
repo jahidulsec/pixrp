@@ -3,6 +3,7 @@ import 'package:pixrp/utils/constants/colors.dart';
 import 'package:pixrp/utils/theme/widgets_theme/appbar_theme.dart';
 import 'package:pixrp/utils/theme/widgets_theme/card_theme.dart';
 import 'package:pixrp/utils/theme/widgets_theme/elevated_button_theme.dart';
+import 'package:pixrp/utils/theme/widgets_theme/filled_button_theme.dart';
 import 'package:pixrp/utils/theme/widgets_theme/text_button_theme.dart';
 import 'package:pixrp/utils/theme/widgets_theme/text_theme.dart';
 
@@ -17,6 +18,7 @@ class AppThemes {
     elevatedButtonTheme: AppElevatedButtonThemes.lightElevatedButtonTheme,
     cardTheme: CardThemes.lightCardTheme,
     textButtonTheme: TextButtonThemes.lightTextButtonTheme,
+    filledButtonTheme: FilledButtonThemes.lightFilledButtonTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -27,5 +29,6 @@ class AppThemes {
     elevatedButtonTheme: AppElevatedButtonThemes.darkElevatedButtonTheme,
     cardTheme: CardThemes.darkCardTheme,
     textButtonTheme: TextButtonThemes.darkTextButtonTheme,
+    filledButtonTheme: FilledButtonThemes.darkFilledButtonTheme,
   );
 }

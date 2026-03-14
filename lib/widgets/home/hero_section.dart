@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pixrp/utils/constants/colors.dart';
 import 'package:pixrp/utils/constants/sizes.dart';
 import 'package:pixrp/utils/formatters/formatter.dart';
 
@@ -25,7 +26,7 @@ class HeroSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
-              child: ElevatedButton.icon(
+              child: FilledButton.icon(
                 onPressed: () {},
                 label: Text('Send'),
                 icon: Icon(CupertinoIcons.arrow_up_right),
@@ -33,10 +34,14 @@ class HeroSection extends StatelessWidget {
             ),
             const SizedBox(width: AppSizes.spaceBtwItems),
             Expanded(
-              child: ElevatedButton.icon(
+              child: FilledButton.icon(
                 onPressed: () {},
                 label: Text('Receive'),
                 icon: Icon(CupertinoIcons.arrow_down_left),
+                style: FilledButton.styleFrom(
+                  backgroundColor: AppColors.secondaryForeground,
+                  foregroundColor: AppColors.secondary,
+                ),
               ),
             ),
           ],
