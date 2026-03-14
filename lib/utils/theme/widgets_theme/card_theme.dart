@@ -8,7 +8,7 @@ class CardThemes {
   static CardThemeData lightCardTheme = CardThemeData(
     elevation: 0,
     margin: const EdgeInsets.symmetric(horizontal: AppSizes.md),
-    color: AppColors.background,
+    color: AppColors.card,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(AppSizes.md),
     ),
@@ -17,7 +17,7 @@ class CardThemes {
   static CardThemeData darkCardTheme = CardThemeData(
     elevation: 0,
     margin: const EdgeInsets.symmetric(horizontal: AppSizes.md),
-    color: AppColors.dBackground,
+    color: AppColors.dCard,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(AppSizes.md),
     ),

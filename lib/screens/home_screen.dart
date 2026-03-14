@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pixrp/utils/constants/colors.dart';
 import 'package:pixrp/utils/constants/sizes.dart';
+import 'package:pixrp/widgets/home/account_section.dart';
 import 'package:pixrp/widgets/home/hero_section.dart';
-import 'package:pixrp/widgets/shared/card/card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -33,25 +33,8 @@ class HomeScreen extends StatelessWidget {
         children: [
           Container(padding: EdgeInsets.all(AppSizes.md), child: HeroSection()),
           const SizedBox(height: AppSizes.spaceBtwSections),
-          Card(
-            child: Padding(
-              padding: const EdgeInsets.all(AppSizes.md),
-              child: Column(
-                children: [
-                  CardHeader(
-                    children: [
-                      CardHeading(title: "Accounts"),
-                      TextButton.icon(
-                        onPressed: () {},
-                        icon: Icon(CupertinoIcons.add),
-                        label: Text("Add"),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
+          AccountSection(),
+          const SizedBox(height: AppSizes.spaceBtwSections),
         ],
       ),
     );

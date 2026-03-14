@@ -7,7 +7,7 @@ class TextButtonThemes {
 
   static TextButtonThemeData lightTextButtonTheme = TextButtonThemeData(
     style: TextButton.styleFrom(
-      foregroundColor: AppColors.primary,
+      foregroundColor: AppColors.primaryForeground,
       textStyle: TextStyle(
         fontWeight: FontWeight.w600,
         fontSize: 14,
@@ -22,7 +22,7 @@ class TextButtonThemes {
 
   static TextButtonThemeData darkTextButtonTheme = TextButtonThemeData(
     style: TextButton.styleFrom(
-      foregroundColor: AppColors.dPrimary,
+      foregroundColor: AppColors.dPrimaryForeground,
       textStyle: TextStyle(
         fontWeight: FontWeight.w600,
         fontSize: 14,
