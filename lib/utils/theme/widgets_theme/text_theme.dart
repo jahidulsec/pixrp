@@ -1,33 +1,160 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-
 import '../../constants/colors.dart';
 
-/* -- Light & Dark Text Themes -- */
 class AppTextThemes {
-  AppTextThemes._(); //To avoid creating instances
+  AppTextThemes._();
 
-  /* -- Light Text Theme -- */
+  /* -- Light Theme -- */
   static TextTheme lightTextTheme = TextTheme(
-    displayLarge: GoogleFonts.poppins(fontSize: 28.0, fontWeight: FontWeight.bold, color: AppColors.foreground),
-    displayMedium: GoogleFonts.poppins(fontSize: 24.0, fontWeight: FontWeight.w700, color: AppColors.foreground),
-    displaySmall: GoogleFonts.poppins(fontSize: 24.0, fontWeight: FontWeight.normal, color: AppColors.foreground),
-    headlineMedium: GoogleFonts.poppins(fontSize: 18.0, fontWeight: FontWeight.w600, color: AppColors.foreground),
-    headlineSmall: GoogleFonts.poppins(fontSize: 18.0, fontWeight: FontWeight.normal, color: AppColors.foreground),
-    titleLarge: GoogleFonts.poppins(fontSize: 14.0, fontWeight: FontWeight.w600, color: AppColors.foreground),
-    bodyLarge: GoogleFonts.poppins(fontSize: 14.0, color: AppColors.foreground),
-    bodyMedium: GoogleFonts.poppins(fontSize: 14.0, color: AppColors.foreground.withValues(alpha: 0.8)),
+    displayLarge: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.bold,
+      color: AppColors.foreground,
+    ),
+    displayMedium: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.bold,
+      color: AppColors.foreground,
+    ),
+    displaySmall: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w600,
+      color: AppColors.foreground,
+    ),
+
+    headlineLarge: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w600,
+      color: AppColors.foreground,
+    ),
+    headlineMedium: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w600,
+      color: AppColors.foreground,
+    ),
+    headlineSmall: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w500,
+      color: AppColors.foreground,
+    ),
+
+    titleLarge: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w600,
+      color: AppColors.foreground,
+    ),
+    titleMedium: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w500,
+      color: AppColors.foreground,
+    ),
+    titleSmall: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w500,
+      color: AppColors.foreground,
+    ),
+
+    bodyLarge: TextStyle(fontFamily: 'Geist', color: AppColors.foreground),
+    bodyMedium: TextStyle(
+      fontFamily: 'Geist',
+      color: AppColors.foreground.withValues(alpha: 0.9),
+    ),
+    bodySmall: TextStyle(
+      fontFamily: 'Geist',
+      color: AppColors.foreground.withValues(alpha: 0.7),
+    ),
+
+    labelLarge: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w600,
+      color: AppColors.foreground,
+    ),
+    labelMedium: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w500,
+      color: AppColors.foreground,
+    ),
+    labelSmall: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w500,
+      color: AppColors.foreground,
+    ),
   );
 
-  /* -- Dark Text Theme -- */
+  /* -- Dark Theme -- */
   static TextTheme darkTextTheme = TextTheme(
-    displayLarge: GoogleFonts.poppins(fontSize: 28.0, fontWeight: FontWeight.bold, color: AppColors.dForeground),
-    displayMedium: GoogleFonts.poppins(fontSize: 24.0, fontWeight: FontWeight.w700, color: AppColors.dForeground),
-    displaySmall: GoogleFonts.poppins(fontSize: 24.0, fontWeight: FontWeight.normal, color: AppColors.dForeground),
-    headlineMedium: GoogleFonts.poppins(fontSize: 18.0, fontWeight: FontWeight.w600, color: AppColors.dForeground),
-    headlineSmall: GoogleFonts.poppins(fontSize: 18.0, fontWeight: FontWeight.normal, color: AppColors.dForeground),
-    titleLarge: GoogleFonts.poppins(fontSize: 14.0, fontWeight: FontWeight.w600, color: AppColors.dForeground),
-    bodyLarge: GoogleFonts.poppins(fontSize: 14.0, color: AppColors.dForeground),
-    bodyMedium: GoogleFonts.poppins(fontSize: 14.0, color: AppColors.dForeground.withValues(alpha: 0.8)),
+    displayLarge: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.bold,
+      color: AppColors.dForeground,
+    ),
+    displayMedium: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.bold,
+      color: AppColors.dForeground,
+    ),
+    displaySmall: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w600,
+      color: AppColors.dForeground,
+    ),
+
+    headlineLarge: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w600,
+      color: AppColors.dForeground,
+    ),
+    headlineMedium: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w600,
+      color: AppColors.dForeground,
+    ),
+    headlineSmall: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w500,
+      color: AppColors.dForeground,
+    ),
+
+    titleLarge: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w600,
+      color: AppColors.dForeground,
+    ),
+    titleMedium: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w500,
+      color: AppColors.dForeground,
+    ),
+    titleSmall: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w500,
+      color: AppColors.dForeground,
+    ),
+
+    bodyLarge: TextStyle(fontFamily: 'Geist', color: AppColors.dForeground),
+    bodyMedium: TextStyle(
+      fontFamily: 'Geist',
+      color: AppColors.dForeground.withValues(alpha: 0.9),
+    ),
+    bodySmall: TextStyle(
+      fontFamily: 'Geist',
+      color: AppColors.dForeground.withValues(alpha: 0.7),
+    ),
+
+    labelLarge: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w600,
+      color: AppColors.dForeground,
+    ),
+    labelMedium: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w500,
+      color: AppColors.dForeground,
+    ),
+    labelSmall: TextStyle(
+      fontFamily: 'Geist',
+      fontWeight: FontWeight.w500,
+      color: AppColors.dForeground,
+    ),
   );
 }
