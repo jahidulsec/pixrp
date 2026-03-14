@@ -45,8 +45,9 @@ class AppTextThemes {
     ),
     titleMedium: TextStyle(
       fontFamily: 'Geist',
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w600,
       color: AppColors.foreground,
+      fontSize: 18,
     ),
     titleSmall: TextStyle(
       fontFamily: 'Geist',
@@ -57,7 +58,8 @@ class AppTextThemes {
     bodyLarge: TextStyle(fontFamily: 'Geist', color: AppColors.foreground),
     bodyMedium: TextStyle(
       fontFamily: 'Geist',
-      color: AppColors.foreground.withValues(alpha: 0.9),
+      color: AppColors.foreground,
+      fontWeight: FontWeight.w600,
     ),
     bodySmall: TextStyle(
       fontFamily: 'Geist',
@@ -122,8 +124,9 @@ class AppTextThemes {
     ),
     titleMedium: TextStyle(
       fontFamily: 'Geist',
-      fontWeight: FontWeight.w500,
       color: AppColors.dForeground,
+      fontSize: 18,
+      fontWeight: FontWeight.w600,
     ),
     titleSmall: TextStyle(
       fontFamily: 'Geist',
@@ -132,10 +135,7 @@ class AppTextThemes {
     ),
 
     bodyLarge: TextStyle(fontFamily: 'Geist', color: AppColors.dForeground),
-    bodyMedium: TextStyle(
-      fontFamily: 'Geist',
-      color: AppColors.dForeground.withValues(alpha: 0.9),
-    ),
+    bodyMedium: TextStyle(fontFamily: 'Geist', color: AppColors.dForeground),
     bodySmall: TextStyle(
       fontFamily: 'Geist',
       color: AppColors.dForeground.withValues(alpha: 0.7),
