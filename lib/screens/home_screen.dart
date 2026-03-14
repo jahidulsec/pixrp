@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pixrp/utils/constants/colors.dart';
 import 'package:pixrp/utils/constants/sizes.dart';
-import 'package:pixrp/utils/formatters/formatter.dart';
+import 'package:pixrp/widgets/home/hero_section.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +12,12 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actionsPadding: EdgeInsets.only(right: AppSizes.md),
-        title: Text("PixRP", style: Theme.of(context).textTheme.headlineLarge),
+        title: Text(
+          "PixRP",
+          style: Theme.of(
+            context,
+          ).textTheme.headlineSmall!.copyWith(fontWeight: FontWeight.bold),
+        ),
         actions: [
           IconButton(
             onPressed: () {},
@@ -25,45 +30,13 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Container(
-            padding: EdgeInsets.all(AppSizes.md),
-            child: Column(
-              children: [
-                const Text(
-                  "Jahidul's Wallet Status",
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: AppSizes.spaceBtwItems),
-                Text(
-                  Formatter.formatNumber(521098.31),
-                  style: Theme.of(
-                    context,
-                  ).textTheme.displayLarge?.copyWith(fontSize: 40),
-                ),
-
-                const SizedBox(height: AppSizes.xl),
-
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Expanded(
-                      child: ElevatedButton.icon(
-                        onPressed: () {},
-                        label: Text('Send'),
-                        icon: Icon(CupertinoIcons.arrow_up_right),
-                      ),
-                    ),
-                    const SizedBox(width: AppSizes.spaceBtwItems),
-                    Expanded(
-                      child: ElevatedButton.icon(
-                        onPressed: () {},
-                        label: Text('Receive'),
-                        icon: Icon(CupertinoIcons.arrow_down_left),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
+          Container(padding: EdgeInsets.all(AppSizes.md), child: HeroSection()),
+          const SizedBox(height: AppSizes.spaceBtwSections),
+          Card(
+            child: Container(
+              width: double.infinity,
+              padding: EdgeInsets.all(AppSizes.md),
+              child: Text("data"),
             ),
           ),
         ],
