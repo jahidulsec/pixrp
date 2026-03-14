@@ -9,12 +9,14 @@ class Avatar extends StatelessWidget {
     required this.name,
     this.backgroundColor = AppColors.muted,
     this.borderRadius,
+    this.viewLabel = true,
   });
 
   final double size;
   final String name;
   final Color backgroundColor;
   final double? borderRadius; // optional, defaults to circle
+  final bool viewLabel;
 
   @override
   Widget build(BuildContext context) {
@@ -41,16 +43,17 @@ class Avatar extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(
-          width: size * 1.5,
-          child: Text(
-            name,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            softWrap: true,
-            textAlign: TextAlign.center,
+        if (viewLabel)
+          SizedBox(
+            width: size * 1.5,
+            child: Text(
+              name,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              softWrap: true,
+              textAlign: TextAlign.center,
+            ),
           ),
-        ),
       ],
     );
   }

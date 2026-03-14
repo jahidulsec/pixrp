@@ -15,6 +15,7 @@ class AccountSection extends StatelessWidget {
           left: AppSizes.md,
           right: AppSizes.md,
           bottom: AppSizes.md,
+          top: AppSizes.md / 2,
         ),
         child: Column(
           children: [

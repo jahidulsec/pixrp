@@ -4,6 +4,7 @@ import 'package:pixrp/utils/constants/colors.dart';
 import 'package:pixrp/utils/constants/sizes.dart';
 import 'package:pixrp/widgets/home/account_section.dart';
 import 'package:pixrp/widgets/home/hero_section.dart';
+import 'package:pixrp/widgets/home/transaction_section.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -29,13 +30,19 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Container(padding: EdgeInsets.all(AppSizes.md), child: HeroSection()),
-          const SizedBox(height: AppSizes.spaceBtwSections),
-          AccountSection(),
-          const SizedBox(height: AppSizes.spaceBtwSections),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              padding: EdgeInsets.all(AppSizes.md),
+              child: HeroSection(),
+            ),
+            const SizedBox(height: AppSizes.spaceBtwItems),
+            AccountSection(),
+            const SizedBox(height: AppSizes.spaceBtwItems),
+            TransactionSection(),
+          ],
+        ),
       ),
     );
   }
